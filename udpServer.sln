@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "udpServer", "udpServer\udpServer.csproj", "{F786E34B-24B3-4B0E-BBFF-192FE3FBCEA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{67B2B350-E2E8-4DF8-8D4F-B85A810A65D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F786E34B-24B3-4B0E-BBFF-192FE3FBCEA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F786E34B-24B3-4B0E-BBFF-192FE3FBCEA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F786E34B-24B3-4B0E-BBFF-192FE3FBCEA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F786E34B-24B3-4B0E-BBFF-192FE3FBCEA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B2B350-E2E8-4DF8-8D4F-B85A810A65D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B2B350-E2E8-4DF8-8D4F-B85A810A65D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B2B350-E2E8-4DF8-8D4F-B85A810A65D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B2B350-E2E8-4DF8-8D4F-B85A810A65D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AC7BF66-735E-4E91-8228-B14A4CBA8C9B}
+	EndGlobalSection
+EndGlobal

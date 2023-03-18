@@ -1,0 +1,8 @@
+D:\User\unic\КМ\udpServer\udpServer\bin\Debug\udpServer.exe.config
+D:\User\unic\КМ\udpServer\udpServer\bin\Debug\udpServer.exe
+D:\User\unic\КМ\udpServer\udpServer\bin\Debug\udpServer.pdb
+D:\User\unic\КМ\udpServer\udpServer\obj\Debug\udpServer.csproj.AssemblyReference.cache
+D:\User\unic\КМ\udpServer\udpServer\obj\Debug\udpServer.csproj.SuggestedBindingRedirects.cache
+D:\User\unic\КМ\udpServer\udpServer\obj\Debug\udpServer.csproj.CoreCompileInputs.cache
+D:\User\unic\КМ\udpServer\udpServer\obj\Debug\udpServer.exe
+D:\User\unic\КМ\udpServer\udpServer\obj\Debug\udpServer.pdb
