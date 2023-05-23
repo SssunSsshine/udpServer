@@ -26,7 +26,6 @@ namespace udpServer
             //что границы записи данных предопределены.
             //последний параметр, ProtocolType, задает тип протокола
             Socket SrvSock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-            //Связываем новый сокет с локальной конечной точкой
             SrvSock.Bind(ipep);
             Console.WriteLine("Waiting client connection...");
             //создаем конечную точку по адресу сокета. Т.е. будем "слушать" порты 
@@ -34,12 +33,12 @@ namespace udpServer
             IPEndPoint sender = new IPEndPoint(IPAddress.Any, 0);
             //Получаем конечную удаленную точку
             EndPoint Remote = (EndPoint)(sender);
+
             Encoding encoding = Encoding.GetEncoding("windows-1251");
 
             //Получаем сообщение от клиента ("Client connected sucsessfully!")
             recv = SrvSock.ReceiveFrom(data, ref Remote);
 
-            //Отображаем сообщение о успешно подключенном клиенте
             Console.Write("Message recieved from {0}:", Remote.ToString());
             Console.WriteLine(encoding.GetString(data, 0, recv));
 
@@ -48,23 +47,14 @@ namespace udpServer
             data = encoding.GetBytes(welcome);
             SrvSock.SendTo(data, data.Length, SocketFlags.None, Remote);
 
-            //Бесконечный цикл.
             while (true)
             {
-                //Объявляем новый массив под пришедшие данные.
                 data = new byte[1024];
-                //Получение данных...
                 recv = SrvSock.ReceiveFrom(data, ref Remote);
-                //Перевод принятых байтов в строку
                 string str = encoding.GetString(data, 0, recv);
-
-                //Если пришла команда выхода
-                //Завершаем работу сокета и программы...
-                if (str == "exit") break;
-
+                
                 Console.WriteLine("Recieved data: from {0}:" + str, Remote.ToString());
 
-                //Отсылаем серверу строку (переведенную в байты)
                 SrvSock.SendTo(data, recv, SocketFlags.None, Remote);
             }
         }
